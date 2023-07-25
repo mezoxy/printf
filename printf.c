@@ -52,7 +52,7 @@ int _printf(const char *format, ...)
  * @format: A pointer to a string
  * Return: -1
  */
-int check_format(char *format)
+int check_format(const char *format)
 {
 	if (!format || (*format == '%' && !(format + 1)))
 	{
