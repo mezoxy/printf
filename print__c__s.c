@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 						i += prt_str(str);
 					else
 					{
-						str = "(null)";
+						*str = "(null)";
 						i += prt_str(str);
 					}
 				}
