@@ -52,6 +52,10 @@ int _printf(const char *format, ...)
 			format++;
 		}
 	}
+	else
+	{
+		return (-1);
+	}
 	va_end(y);
 	return (i);
 }
