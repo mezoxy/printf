@@ -9,7 +9,7 @@
 int _printf(const char *format, ...)
 {
 	char c, *str;
-	int i = 0, d;
+	int i = 0;
 	va_list y;
 
 	va_start(y, format);
@@ -38,11 +38,6 @@ int _printf(const char *format, ...)
 				{
 					_putchar('%');
 					i++;
-				}
-				else if (*format == 'd')
-				{
-					d = va_arg(y, int);
-					fun_int(d);
 				}
 				else
 					_putchar(*format);
