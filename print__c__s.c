@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 					if (str)
 						i += prt_str(str);
 					else
-						return (-1);
+						str = "(null)";
 				}
 				else if (*format == '%')
 				{
