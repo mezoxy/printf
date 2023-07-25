@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 					i++;
 				}
 				else
-					format++;
+					_putchar(*format);
 			}
 			else
 			{
