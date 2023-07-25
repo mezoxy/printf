@@ -1,6 +1,8 @@
 #include <unistd.h>
 #include "main.h"
 /**
+ * fun_int - A function that prints an int
+ * @d: An integer
  */
 void fun_int(int d)
 {
