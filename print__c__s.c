@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stddef.h>
 /**
  * _printf - A function that prints char and string
  * @format: A string
@@ -32,8 +33,9 @@ int _printf(const char *format, ...)
 						i += prt_str(str);
 					else
 					{
-						*str = "(null)";
-						i += prt_str(str);
+						return (-1);
+						/**str = "(null)";
+						i += prt_str(str);*/
 					}
 				}
 				else if (*format == '%')

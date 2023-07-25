@@ -1,8 +1,8 @@
 #include <stdio.h>
+#include "main.h"
 int main()
 {
-	char * ptr = NULL;
-
-	printf("hi my name is %s and  i haVE nothing\n", ptr);
+	_printf("Let's try to printf a simple sentence.\n");
+	printf("hi my name is and  i haVE nothing\n");
 	return (0);
 }
