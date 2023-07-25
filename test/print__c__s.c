@@ -15,7 +15,6 @@ int _printf(const char *format, ...)
 	if (format)
 	{
 		while (*format)
-		{
 			if (*format == '%')
 			{
 				format++;
@@ -23,7 +22,7 @@ int _printf(const char *format, ...)
 				{
 					c = va_arg(y, int);
 					_putchar(c);
-					i ++;
+					i++;
 				}
 				else if (*format == 's')
 				{
@@ -44,7 +43,6 @@ int _printf(const char *format, ...)
 				i++;
 			}
 			format++;
-		}
 	}
 	va_end(y);
 	return (i);

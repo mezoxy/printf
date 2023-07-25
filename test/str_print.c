@@ -2,7 +2,7 @@
 /**
  * prt_str - A function that prints a string
  * @string: A string to be printed
- * Retun: Number of char printed
+ * Return: Number of char printed
  */
 int prt_str(char *string)
 {
