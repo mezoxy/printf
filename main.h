@@ -5,5 +5,6 @@ int prt_str(char *stri);
 int _putchar(char c);
 int _printf(const char *format, ...);
 void fun_int(int d);
+check_format(char *format);
 
 #endif
