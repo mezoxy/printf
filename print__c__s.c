@@ -36,11 +36,13 @@ int _printf(const char *format, ...)
 				}
 				else if (*format == '%')
 				{
-					_putchar('%');
-					i++;
+					i += _putchar('%');
 				}
 				else
-					_putchar(*format);
+				{
+					 i += _putchar('%');
+					i += _putchar(*format);
+				}
 			}
 			else
 			{
