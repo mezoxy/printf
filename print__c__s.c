@@ -13,8 +13,7 @@ int _printf(const char *format, ...)
 	va_list y;
 
 	va_start(y, format);
-	if (!format || (*format == '%' && !(format + 1) ) || 
-			(*format == '%' && *(format + 1) == ' ' && !(format + 1)))
+	if ((!format || (*format == '%' && !(format + 1))) || (*format == '%' && *(format + 1) == ' ' && !(format + 1)))
 		return (-1);
 	if (format)
 	{
