@@ -42,7 +42,7 @@ int _printf(const char *format, ...)
 				else if (*format == 'd')
 				{
 					d = va_arg(y, int);
-					void fun_int(d);
+					fun_int(d);
 				}
 				else
 					_putchar(*format);
