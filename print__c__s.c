@@ -42,7 +42,8 @@ int _printf(const char *format, ...)
 					i++;
 				}
 				else
-					_putchar(*format);
+					return (i);
+					/*_putchar(*format);*/
 			}
 			else
 			{
@@ -52,10 +53,10 @@ int _printf(const char *format, ...)
 			format++;
 		}
 	}
-	/**else
+	else
 	{
 		return (-1);
-	}*/
+	}
 	va_end(y);
 	return (i);
 }
