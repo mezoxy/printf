@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 #include <stdarg.h>
 /**
  * _printf - A function that prints char and string
