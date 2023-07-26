@@ -35,6 +35,11 @@ int _printf(const char *format, ...)
 					case '%':
 						i += _putchar('%');
 						break;
+					case 'd':
+					case 'i':
+						u = va_arg(y, int);
+						i += fun_int(u);
+						break;
 					default:
 						i += _putchar('%') + _putchar(*format);
 						break;
