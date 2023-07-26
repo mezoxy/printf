@@ -3,6 +3,7 @@
 /**
  * fun_int - A function that prints an int
  * @d: An integer
+ * Return: Int
  */
 int fun_int(int d)
 {

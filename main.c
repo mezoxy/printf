@@ -1,24 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-
-/**
- *  * main - Entry point
- *   *
- *    * Return: 0 on success, error code otherwise
- *     */
-int main(void)
+int main()
 {
-		int len, len2;
+	int i, j;
 
-			len = _printf("%s", "This sentence is retrieved from va_args!\n");
-				len2 = printf("%s", "This sentence is retrieved from va_args!\n");
-					fflush(stdout);
-						if (len != len2)
-								{
-											printf("Lengths differ.\n");
-													fflush(stdout);
-															return (1);
-																}
-							return (0);
+	i = _printf("%s%s", NULL, NULL);
+	printf("\n");
+	j = printf("%s%s", NULL, NULL);
+	printf("\n");
+	printf("this is i = %d\nthis is j = %d\n", i, j);
+	return (0);
 }
