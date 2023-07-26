@@ -6,7 +6,8 @@
  */
 int fun_int(int d)
 {
-	int i = 0
+	int i = 0;
+
 	if (d < 0)
 	{
 		_putchar('-');
