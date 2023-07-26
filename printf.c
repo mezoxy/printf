@@ -9,7 +9,7 @@
 int _printf(const char *format, ...)
 {
 	char v, *str;
-	int i = 0, u;
+	int i = 0;
 	va_list y;
 
 	va_start(y, format);
@@ -34,11 +34,6 @@ int _printf(const char *format, ...)
 						break;
 					case '%':
 						i += _putchar('%');
-						break;
-					case 'd':
-					case 'i':
-						u = va_arg(y, int);
-						i += fun_int(u);
 						break;
 					default:
 						i += _putchar('%') + _putchar(*format);
