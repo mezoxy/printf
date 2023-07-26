@@ -14,5 +14,19 @@ int check_format(const char *format)
 	{
 		return (-1);
 	}
+	if (*format == '%')
+	{
+		format++;
+		while (*format != '\0')
+		{
+			if (*format == ' ')
+			{
+				format++;
+				continue;
+			}
+			return (0);
+		}
+		return (-1);
+	}
 	return (0);
 }
